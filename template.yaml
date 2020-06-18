@@ -1,0 +1,9 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ${defRoute}:
+      dhcp4: true
+      addresses: [${ipAddr}/24]
+      nameservers:
+         addresses: [8.8.8.8,8.8.4.4]
